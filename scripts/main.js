@@ -1,14 +1,18 @@
 let board = document.querySelector("#board")
 let lineWidth = document.querySelector("#lineWidth")
 let lineColor = document.querySelector("#lineColor")
-
+let resetCanvas = document.querySelector("#resetCanvas")
 const line = 20
 const color = "#BADA55"
+const canvasWidth = ((window.innerWidth)*70)/100;
+const canvasHeight = ((window.innerHeight)*70)/100;
+
+
 lineWidth.value = line
 lineColor.value = color
 
-board.width = ((window.innerWidth)*70)/100;
-board.height = ((window.innerHeight)*70)/100;
+board.width = canvasWidth
+board.height = canvasHeight;
 const ctx = board.getContext('2d');
 
 ctx.strokeStyle = color
@@ -61,3 +65,6 @@ board.addEventListener("mouseout",()=>{
 
 lineWidth.addEventListener("change",setLineWidth);
 lineColor.addEventListener("change",setLineColor);
+resetCanvas.addEventListener("click",(e)=>{
+  ctx.clearRect(0,0, canvasWidth, canvasHeight)
+})

@@ -13,11 +13,11 @@
 }
 .canvas{
   grid-area: canvas;
-  border: 5px solid #000000;
+  border: 1px solid #000000;
 }
 .controls{
   grid-area: controls;  
-  border: 5px solid rgb(51, 13, 107);
+  border: 1px solid rgb(51, 13, 107);
 }
 .images{
   grid-area: images;
