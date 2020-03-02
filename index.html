@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Color</title>
+</head>
+<body>
+  <h1 style="text-align: center;  background: -webkit-linear-gradient(rgb(247, 80, 80), rgb(30, 65, 221)); -webkit-background-clip: text;   -webkit-text-fill-color: transparent;
+  ">My First Color Book 😀</h1>
+  <div class="app">
+    <div class="canvas">
+      <canvas id="board"></canvas>
+    </div>
+    <div class="controls">
+
+      <form>
+        <h2>Drawing board Control</h2>
+        <h5 style="font-style: italic;">(Start drawing)</h5>
+        <div class="form-group row">
+          <label for="linewidth" class="col-md-4">Line width</label>
+          <div class="col-md-8">
+            <input type="range" min="1" max="100" id="lineWidth" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="linewidth" class="col-md-4">Select color</label>
+          <div class="col-md-8">
+            <input type="color" id="lineColor" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="button" id="resetCanvas" class="form-control" value="Reset Canvas">
+        </div>
+      </form>
+    </div>
+    <div class="images">
+      <img src="" alt="">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
