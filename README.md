@@ -9,6 +9,8 @@
 
 ColorBook is a playground for children based on the tutorial from [Javascript30.com](https://javascript30.com/). It allows children to select an image and color it with their preferred colors.
 
+## Live
+ColorBook is available [here](https://rawcdn.githack.com/edemagbenyo/colorbook/12b38490addbe7eb5f4a4b6ce8c64566193e7a0e/index.html)
 
 ## Prerequisites
 
