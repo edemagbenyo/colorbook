@@ -14,14 +14,21 @@
       <canvas id="board"></canvas>
     </div>
     <div class="controls">
-      <form action="">
-        <div class="form-group">
-          <label for="linewidth">Line width</label>
-          <input type="range" min="1" max="100" id="lineWidth" class="form-control">
+
+      <form>
+        <h2>Drawing board Control</h2>
+        <h5 style="font-style: italic;">(Start drawing)</h5>
+        <div class="form-group row">
+          <label for="linewidth" class="col-md-4">Line width</label>
+          <div class="col-md-8">
+            <input type="range" min="1" max="100" id="lineWidth" class="form-control">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="linewidth">Select color</label>
-          <input type="color" id="lineColor" class="form-control">
+        <div class="form-group row">
+          <label for="linewidth" class="col-md-4">Select color</label>
+          <div class="col-md-8">
+            <input type="color" id="lineColor" class="form-control">
+          </div>
         </div>
         <div class="form-group">
           <input type="button" id="resetCanvas" class="form-control" value="Reset Canvas">

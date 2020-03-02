@@ -1,7 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-}
+
 .app{
   display: grid;
   grid-template-columns: 70% 30%;
@@ -21,4 +18,8 @@
 }
 .images{
   grid-area: images;
+}
+
+form{
+  padding:20px;
 }
