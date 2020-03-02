@@ -1,6 +1,9 @@
 let board = document.querySelector("#board")
+let lineWidth = document.querySelector("#lineWidth")
+
+
 board.width = ((window.innerWidth)*70)/100;
-board.height = window.innerHeight;
+board.height = ((window.innerHeight)*70)/100;
 const ctx = board.getContext('2d');
 
 ctx.strokeStyle = "#BADA55"
@@ -32,6 +35,10 @@ const draw = (e)=>{
   hue++;
 }
 
+const setLineWidth = (e)=>{
+  ctx.lineWidth = e.target.value
+}
+
 board.addEventListener("mousemove",draw)
 board.addEventListener("mousedown",(e)=>{
   isDrawing = true;
@@ -43,3 +50,5 @@ board.addEventListener("mouseup",()=>{
 board.addEventListener("mouseout",()=>{
   isDrawing = false;
 })
+
+lineWidth.addEventListener("change",setLineWidth);

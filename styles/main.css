@@ -2,18 +2,23 @@
   padding: 0;
   margin: 0;
 }
-body{
-  display: flex;
-  flex-direction: row;
- 
+.app{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "canvas controls"
+    "images images"
+  ;
 }
 .canvas{
-  justify-content: center;
+  grid-area: canvas;
   border: 5px solid #000000;
-  flex-basis: 70%;
 }
 .controls{
-  flex-basis: 30%;
-  
+  grid-area: controls;  
   border: 5px solid rgb(51, 13, 107);
+}
+.images{
+  grid-area: images;
 }
