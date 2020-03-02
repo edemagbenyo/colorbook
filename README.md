@@ -7,9 +7,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/README-template.md?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FedemAgbenyo)
 
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+ColorBook is a playground for children. It allows children to select an image and color it with their preferred colors.
 
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
 
 ## Prerequisites
 
@@ -17,7 +16,6 @@ Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of `<coding_language/dependency/requirement_1>`
 * You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
 
 ## Installing <colobook>
 
@@ -25,25 +23,25 @@ To install <colobook>, follow these steps:
 
 Linux and macOS:
 ```
-<install_command>
+git clone https://github.com/edemagbenyo/colorbook
+npm install
 ```
 
 Windows:
 ```
-<install_command>
+git clone https://github.com/edemagbenyo/colorbook
+npm install
 ```
 ## Using <colobook>
 
 To use <colobook>, follow these steps:
 
-```
-<usage_example>
-```
+Open your root folder in your browser
 
 Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
 ## Contributing to <colobook>
-<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+
 To contribute to <colobook>, follow these steps:
 
 1. Fork this repository.
