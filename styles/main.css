@@ -11,6 +11,7 @@
 .canvas{
   grid-area: canvas;
   border: 1px solid #000000;
+  cursor: url("../images/circle.png"),auto ;
 }
 .controls{
   grid-area: controls;  
