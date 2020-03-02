@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/README-template.md?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FedemAgbenyo)
 
-ColorBook is a playground for children. It allows children to select an image and color it with their preferred colors.
+ColorBook is a playground for children based on the tutorial from [Javascript30.com](https://javascript30.com/). It allows children to select an image and color it with their preferred colors.
 
 
 ## Prerequisites
