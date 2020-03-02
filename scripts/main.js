@@ -1,15 +1,20 @@
 let board = document.querySelector("#board")
 let lineWidth = document.querySelector("#lineWidth")
+let lineColor = document.querySelector("#lineColor")
 
+const line = 20
+const color = "#BADA55"
+lineWidth.value = line
+lineColor.value = color
 
 board.width = ((window.innerWidth)*70)/100;
 board.height = ((window.innerHeight)*70)/100;
 const ctx = board.getContext('2d');
 
-ctx.strokeStyle = "#BADA55"
+ctx.strokeStyle = color
 ctx.lineJoin="round"
 ctx.lineCap="round"
-ctx.lineWidth=10
+ctx.lineWidth=line
 
 let isDrawing = false;
 let lastX = 0
@@ -18,7 +23,7 @@ let hue = 0
 
 const draw = (e)=>{
   if (!isDrawing) return;
-  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
+  // ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
   ctx.beginPath();
 
   //start from
@@ -38,6 +43,9 @@ const draw = (e)=>{
 const setLineWidth = (e)=>{
   ctx.lineWidth = e.target.value
 }
+const setLineColor = (e)=>{
+  ctx.strokeStyle = e.target.value
+}
 
 board.addEventListener("mousemove",draw)
 board.addEventListener("mousedown",(e)=>{
@@ -52,3 +60,4 @@ board.addEventListener("mouseout",()=>{
 })
 
 lineWidth.addEventListener("change",setLineWidth);
+lineColor.addEventListener("change",setLineColor);
