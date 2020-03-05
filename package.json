@@ -4,6 +4,8 @@
   "private": true,
   "description": "A color play book for children",
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/edemagbenyo/colorbook#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   }

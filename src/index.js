@@ -1,4 +1,6 @@
+import eraser from './libs/eraser';
 (()=>{
+  
   let board = document.querySelector("#board")
 let lineWidth = document.querySelector("#lineWidth")
 let lineColor = document.querySelector("#lineColor")
@@ -7,6 +9,8 @@ const line = 20
 const color = "#BADA55"
 const canvasWidth = ((window.innerWidth)*70)/100;
 const canvasHeight = ((window.innerHeight)*70)/100;
+
+let eraserSize= eraser.size;
 
 
 lineWidth.value = line
