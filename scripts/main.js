@@ -1,4 +1,5 @@
-let board = document.querySelector("#board")
+(()=>{
+  let board = document.querySelector("#board")
 let lineWidth = document.querySelector("#lineWidth")
 let lineColor = document.querySelector("#lineColor")
 let resetCanvas = document.querySelector("#resetCanvas")
@@ -68,3 +69,4 @@ lineColor.addEventListener("change",setLineColor);
 resetCanvas.addEventListener("click",(e)=>{
   ctx.clearRect(0,0, canvasWidth, canvasHeight)
 })
+})()

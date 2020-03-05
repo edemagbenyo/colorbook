@@ -1,8 +1,8 @@
 {
   "name": "colorbook",
   "version": "1.0.0",
+  "private": true,
   "description": "A color play book for children",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/edemagbenyo/colorbook/issues"
   },
-  "homepage": "https://github.com/edemagbenyo/colorbook#readme"
+  "homepage": "https://github.com/edemagbenyo/colorbook#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
