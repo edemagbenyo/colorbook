@@ -1,4 +1,5 @@
 import eraser from './libs/eraser';
+import './styles/main.css';
 (()=>{
   
   let board = document.querySelector("#board")
